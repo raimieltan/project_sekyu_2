@@ -5174,10 +5174,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4974703130926068388, guid: a8cf938c7321b1d3e9e3689f47f3077b,
+        type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3074272297
+      objectReference: {fileID: 0}
     - target: {fileID: 4984996572131509873, guid: a8cf938c7321b1d3e9e3689f47f3077b,
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984996572131509882, guid: a8cf938c7321b1d3e9e3689f47f3077b,
+        type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 56855568}
+    - target: {fileID: 7268588322839368792, guid: a8cf938c7321b1d3e9e3689f47f3077b,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 2.187151
       objectReference: {fileID: 0}
     - target: {fileID: 7268588322839368793, guid: a8cf938c7321b1d3e9e3689f47f3077b,
         type: 3}
@@ -5197,7 +5212,7 @@ PrefabInstance:
     - target: {fileID: 7268588323759914296, guid: a8cf938c7321b1d3e9e3689f47f3077b,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 2.1731844
+      value: 2.187151
       objectReference: {fileID: 0}
     - target: {fileID: 7268588323759914297, guid: a8cf938c7321b1d3e9e3689f47f3077b,
         type: 3}
