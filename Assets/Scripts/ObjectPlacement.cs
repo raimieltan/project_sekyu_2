@@ -103,7 +103,7 @@ public class ObjectPlacement : MonoBehaviour
             }
         }
 
-        //GENERATE ENVIRONMENT
+        // GENERATE ENVIRONMENT
         for (int i = 0; i < environmentPrefab.Length; i++) {
             for (int j = 0; j < environmentDensity; j++) {
                 float sampleX = Random.Range(environmentXRange.x, environmentXRange.y);
@@ -121,14 +121,14 @@ public class ObjectPlacement : MonoBehaviour
                 instantiatedPrefab.transform.Rotate(Vector3.up, Random.Range(rotationRange.x, rotationRange.y), Space.Self);
                 instantiatedPrefab.transform.rotation = Quaternion.Lerp(transform.rotation, transform.rotation * Quaternion.FromToRotation(instantiatedPrefab.transform.up, hit.normal), rotateTowardsNormal);
                 instantiatedPrefab.transform.localScale = new Vector3(
-                    Random.Range(minScale.x, maxScale.x),
-                    Random.Range(minScale.y, maxScale.y),
-                    Random.Range(minScale.z, maxScale.z)
+                    0.3f,
+                    0.3f,
+                    0.3f
                 );
             }
         }
 
-        //GENERATE GRASS
+        // GENERATE GRASS
         for (int i = 0; i < grassDensity; i++) {
             float sampleX = Random.Range(grassXRange.x, grassXRange.y);
             float sampleY = Random.Range(grassZRange.x, grassZRange.y);
@@ -144,7 +144,7 @@ public class ObjectPlacement : MonoBehaviour
             instantiatedPrefab.transform.position = hit.point;
             instantiatedPrefab.transform.Rotate(Vector3.up, Random.Range(rotationRange.x, rotationRange.y), Space.Self);
             instantiatedPrefab.transform.rotation = Quaternion.Lerp(transform.rotation, transform.rotation * Quaternion.FromToRotation(instantiatedPrefab.transform.up, hit.normal), rotateTowardsNormal);
-            instantiatedPrefab.transform.localScale = new Vector3(2f, 2f, 2f);
+            instantiatedPrefab.transform.localScale = new Vector3(1f, 1f, 1f);
             
         }
     }
